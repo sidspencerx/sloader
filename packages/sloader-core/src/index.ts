@@ -15,4 +15,8 @@ export async function loadAndExtract(
   return engine.loadAndExtract(url, options);
 }
 
+export * from "./protocol/messages";
 export * from "./protocol/types";
+export * from "./core/errors";
+
+

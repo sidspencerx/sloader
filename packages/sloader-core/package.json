@@ -1,0 +1,21 @@
+{
+  "name": "sloader-core",
+  "version": "0.1.0",
+  "description": "Core DOM-scrolling and extraction engine for sloader. Runs inside any WebView or browser context.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "bundle": "tsup"
+  },
+  "dependencies": {
+    "sloader-types": "*"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}

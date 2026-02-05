@@ -1,0 +1,17 @@
+{
+  "name": "sloader-web",
+  "version": "0.1.0",
+  "description": "Web adapter for sloader-core using iframe + postMessage.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "sloader-core": "*",
+    "sloader-types": "*"
+  },
+  "license": "MIT"
+}
