@@ -1,22 +1,5 @@
-import { createEngine } from "./core/engine";
-import { PlatformBridge, SloaderOptions, SloaderResult } from "./protocol/types";
+import { createChromiumRuntime } from './adapters/chromium';
+export * from './types';
+export * from './core';
 
-
-/**
- * Public entrypoint for sloader-core.
- * The platform (android/ios/web) must provide a PlatformBridge implementation.
- */
-export async function loadAndExtract(
-  url: string,
-  options: SloaderOptions,
-  bridge: PlatformBridge
-): Promise<SloaderResult> {
-  const engine = createEngine(bridge);
-  return engine.loadAndExtract(url, options);
-}
-
-export * from "./protocol/messages";
-export * from "./protocol/types";
-export * from "./core/errors";
-
-
+export { createChromiumRuntime };
