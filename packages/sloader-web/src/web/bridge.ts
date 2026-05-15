@@ -2,7 +2,7 @@ import {
   PlatformBridge,
   CoreToPlatformMessage,
   PlatformToCoreMessage
-} from "sloader-core";
+} from "../../../sloader-core/dist/index.js";
 import type { IframeWithWindow } from "./types";
 
 /**

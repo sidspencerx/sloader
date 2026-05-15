@@ -1,4 +1,4 @@
-import { loadAndExtract, PlatformBridge, SloaderOptions, SloaderResult } from "sloader-core";
+import { loadAndExtract, PlatformBridge, SloaderOptions, SloaderResult } from "../../sloader-core/dist/index.js";
 import { createIframeBridge } from "./web/bridge";
 import { createHiddenIframe, loadUrlIntoIframe, injectSloaderCore } from "./web/iframe-loader";
 
@@ -22,4 +22,4 @@ export async function loadWithSloaderWeb(
   }
 }
 
-export type { SloaderOptions, SloaderResult } from "sloader-core";
+export type { SloaderOptions, SloaderResult } from "../../sloader-core/dist/index.js";
