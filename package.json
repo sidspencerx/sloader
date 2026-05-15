@@ -1,21 +1,12 @@
 {
-  "name": "sloader",
+  "name": "sloader-monorepo",
   "private": true,
-  "version": "1.0.0",
-  "description": "AI ingestion layer, enabling full content extraction from urls",
-  "main": "index.js",
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "sidspencerx",
-  "license": "ISC",
-  "type": "commonjs"
+    "build": "npm run build --workspaces",
+    "clean": "rm -rf node_modules package-lock.json && find . -type d -name dist -exec rm -rf {} +"
+  }
 }

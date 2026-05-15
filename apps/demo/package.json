@@ -6,10 +6,11 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "tsc -b"
+    "build": "tsc -b",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@sloader/core": "workspace:*"
+    "@sloader/core": "*"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
