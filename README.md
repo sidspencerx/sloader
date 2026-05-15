@@ -1,12 +1,18 @@
 # sloader
 
-A cross-platform AI ingestion layer for extracting full text from modern web pages
-(JS-heavy, lazy-loaded, CORS-blocked) so apps can feed that text to AI models.
+**Deterministic ingestion for agentic systems.**
 
-This monorepo contains:
+sloader is a minimal, cross‑platform ingestion primitive designed to give agents a stable, predictable way to load, scroll, and extract content from the web — without brittle automation, heuristics, or scraping hacks.
 
-- sloader-core: shared DOM extraction logic
-- sloader-android: Capacitor plugin for Android WebView extraction
-- sloader-ios: Capacitor plugin for iOS WKWebView extraction
-- sloader-web: browser extension + fallback implementation
-- sbud: reference app demonstrating sloader
+At its core, sloader provides:
+
+- a deterministic ingestion engine  
+- a capability surface that adapters implement  
+- a headless Chromium adapter (Playwright)  
+- a clean, minimal API  
+- a monorepo structure for future adapters (browser extension, mobile, webview, etc.)
+
+sloader is not a scraper, crawler, or automation tool.  
+It is a **primitive** — a foundational capability that other systems build on.
+
+
